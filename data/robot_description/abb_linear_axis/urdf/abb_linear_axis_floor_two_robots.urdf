@@ -22,7 +22,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://abb_linear_axis_overhead/meshes/visual/axis.stl"/>
+        <mesh filename="package://abb_linear_axis/meshes/visual/axis_floor.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.9254902 0.9254902 0.9058824 1"/>
@@ -30,14 +30,14 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://abb_linear_axis_overhead/meshes/collision/axis.stl"/>
+        <mesh filename="package://abb_linear_axis/meshes/collision/axis_floor.stl"/>
       </geometry>
     </collision>
   </link>
   <joint name="cartA_joint" type="prismatic">
     <parent link="axis"/>
     <child link="cartA"/>
-    <origin rpy="3.14159265 0 0 " xyz="0.42 -0.02 3.104"/>
+    <origin rpy="0 0 0 " xyz="0.42 -0.02 1.5"/>
     <axis xyz="1 0 0"/>
     <limit effort="100000" lower="0.0" upper="15.660" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
@@ -50,7 +50,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://abb_linear_axis_overhead/meshes/visual/cart.stl"/>
+        <mesh filename="package://abb_linear_axis/meshes/visual/cart_floor.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.9254902 0.9254902 0.9058824 1"/>
@@ -58,14 +58,14 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://abb_linear_axis_overhead/meshes/collision/cart.stl"/>
+        <mesh filename="package://abb_linear_axis/meshes/collision/cart_floor.stl"/>
       </geometry>
     </collision>
   </link>
   <joint name="cartB_joint" type="prismatic">
     <parent link="axis"/>
     <child link="cartB"/>
-    <origin rpy="3.14159265 0 0 " xyz="16.08 -0.02 3.104"/>
+    <origin rpy="0 0 0 " xyz="16.08 -0.02 1.5"/>
     <axis xyz="1 0 0"/>
     <limit effort="100000" lower="-15.660" upper="0.0" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
@@ -78,7 +78,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://abb_linear_axis_overhead/meshes/visual/cart.stl"/>
+        <mesh filename="package://abb_linear_axis/meshes/visual/cart_floor.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.9254902 0.9254902 0.9058824 1"/>
@@ -86,7 +86,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://abb_linear_axis_overhead/meshes/collision/cart.stl"/>
+        <mesh filename="package://abb_linear_axis/meshes/collision/cart_floor.stl"/>
       </geometry>
     </collision>
   </link>
