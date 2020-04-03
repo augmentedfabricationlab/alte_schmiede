@@ -62,8 +62,8 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
 ## Docker Setup Information
 * Docker user name: augmentedfabricationlab
 * The [alte_schmiede_description](https://github.com/augmentedfabricationlab/alte_schmiede_description.git) repository contains the robot descriptions files for the Dockerfile building.
-* The [abb_robotic_setups](https://github.com/augmentedfabricationlab/abb_robotic_setups.git) repository contains the catkin workspace for the urdf models and moveit packages for ABB robotic setups, for setting up the systems in Linux.
-* The `ros-base` and `novnc` images are remote images and drawn from the gramaziokohler docker images.
+* The [abb_robotic_setups](https://github.com/augmentedfabricationlab/abb_robotic_setups.git) repository contains the catkin workspace for the urdf models and moveit packages for ABB robotic setups, for setting up the systems in Linux as described in [this tutorial](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html).
+* The `ros-base` and `novnc` images are remote images and drawn from the [gramaziokohler docker hub organization](https://hub.docker.com/u/gramaziokohler).
 
 ## Docker Troubleshooting
 
