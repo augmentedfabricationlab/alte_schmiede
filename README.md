@@ -65,6 +65,15 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
 * The [abb_robotic_setups](https://github.com/augmentedfabricationlab/abb_robotic_setups.git) repository contains the catkin workspace for the urdf models and moveit packages for ABB robotic setups, for setting up the systems in Linux as described in [this tutorial](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html).
 * The `ros-base` and `novnc` images are remote images and drawn from the [gramaziokohler docker hub organization](https://hub.docker.com/u/gramaziokohler).
 
+## Moveit on Linux
+
+when ROS should be connected between 2 machines via Ethernet, the ROS MASTER and IPP should be changed via
+    nano ~/.bashrc
+and set accordingly:
+    export ROS_MASTER_URI=http://10.10.0.1:11311
+    export ROS_IP=10.10.0.1
+
+
 ## Docker Troubleshooting
 
 Sometimes things don't go as expected. Here are some of answers to the most common issues you might bump into:
