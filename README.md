@@ -91,7 +91,11 @@ and set accordingly:
      <disable_collisions link1="robotB_link_4" link2="robotB_link_6" reason="User"/>
  
  
- Then run again `catkin_make` and `source devel/setup.bash`.
+ Then run again `catkin_make` and `source devel/setup.bash` and run your moveit demo pacakge:
+ 
+    roslaunch your_package_name_moveit_config  demo.launch rviz_tutorial:=true
+    
+ And push the files to the remote repository.
 
 ## Docker Troubleshooting
 
