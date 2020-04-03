@@ -42,7 +42,8 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
 
 ## Simulation playground
 
-For starting the simulation, open the [Rhino](rhino/robotic_setup_alte_schmiede.3dm) and [Grasshopper](rhino/robotic_setup_alte_schmiede) file. First, you need to load a specified robot model which you can choose from the list of urdf files by pressing the `load` button.
+For starting the simulation, open the [Rhino](rhino/robotic_setup_alte_schmiede.3dm) and [Grasshopper](rhino/robotic_setup_alte_schmiede.ghx) file: 
+* First, you need to load a specified robot model which you can choose from the list of urdf files by pressing the `load` button.
 
 > 1. Run *docker-compose* to start the [`ROS ABB Linear Axis`](docker/ros-systems/ros-abb-linear-axis/docker-compose.yml) system [<small>(*need help?*)</small>](docker-help.md).
 
