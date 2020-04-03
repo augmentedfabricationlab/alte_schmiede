@@ -45,7 +45,7 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
 * For starting the simulation, open the [rhino/robotic_setup_alte_schmiede.3dm](rhino/robotic_setup_alte_schmiede.3dm) and [rhino/robotic_setup_alte_schmiede.ghx](rhino/robotic_setup_alte_schmiede.ghx) file
 * First, you need to load a specified robot model by pressing the `load` button (you can choose the model from a list of urdf files).
 * Once, the model is loaded, you can manipulate the joints with the sliders in the `Configuration` cluster.
-* For starting the ROS moveit simulation environment in docker, go to VS code, and start the docker file by:
+* For starting the Docker ROS moveit simulation environment, go to VS code and start the docker container by:
   * __Only once__: If you do this the first time, you have to build the local [Dockerfile](docker\docker-images\Dockerfile) via 
     * right-click and `Build` or 
     * in the Terminal (cd to folder) via `docker build --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .` 
