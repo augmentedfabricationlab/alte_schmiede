@@ -1,6 +1,6 @@
 # Simulation Environment Alte Schmiede Kreativquartier
 
-**Quick links:** [compas docs](https://compas-dev.github.io/main/) | [compas_fab docs](https://gramaziokohler.github.io/compas_fab/latest/) | [urdf and moveit tutorials](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html) | [troubleshooting](#docker-troubleshooting)
+**Quick links:** [compas docs](https://compas-dev.github.io/main/) | [compas_fab docs](https://gramaziokohler.github.io/compas_fab/latest/) | [urdf and moveit tutorials](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html) | # simulation playground(#Alte-Schmiede-Simulation-Playground)[troubleshooting](#docker-troubleshooting)
 
 ## Requirements
 
@@ -40,7 +40,7 @@
 ### Repository Cloning
 Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_schmiede) into your workspace/project folder.    
 
-## Simulation playground
+## Alte Schmiede Simulation Playground
 
 * For starting the simulation, open the [Rhino](rhino/robotic_setup_alte_schmiede.3dm) and [Grasshopper](rhino/robotic_setup_alte_schmiede.ghx) file
 * First, you need to load a specified robot model which you can choose from the list of urdf files by pressing the `load` button.
