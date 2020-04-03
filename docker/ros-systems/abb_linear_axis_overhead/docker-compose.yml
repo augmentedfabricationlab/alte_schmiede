@@ -9,7 +9,7 @@ services:
       - roscore
 
   ros-bridge:
-    image: gramaziokohler/ros-abb-planner:19.11
+    image: augmentedfabricationlab/ros-abb-planner-alte-schmiede:latest
     container_name: ros-bridge
     environment:
       - "ROS_HOSTNAME=ros-bridge"
@@ -25,7 +25,7 @@ services:
       - rosbridge_websocket.launch
 
   ros-fileserver:
-    image: gramaziokohler/ros-abb-planner:19.11
+    image: augmentedfabricationlab/ros-abb-planner-alte-schmiede:latest
     container_name: ros-fileserver
     environment:
       - ROS_HOSTNAME=ros-fileserver
@@ -39,7 +39,7 @@ services:
       - file_server.launch
 
   abb-demo:
-    image: gramaziokohler/ros-abb-planner:20.03
+    image: augmentedfabricationlab/ros-abb-planner-alte-schmiede:latest
     container_name: abb-demo
     environment:
       - ROS_HOSTNAME=abb-demo
@@ -51,7 +51,7 @@ services:
     command:
       - roslaunch
       - --wait
-      - abb_irb4600_40_255_moveit_config
+      - abb_linear_axis_overhead_moveit_config
       - demo.launch
 
   gui:
