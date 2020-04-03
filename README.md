@@ -68,11 +68,22 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
 ## Moveit on Linux
 
 when ROS should be connected between 2 machines via Ethernet, the ROS MASTER and IPP should be changed via
+
     nano ~/.bashrc
+    
 and set accordingly:
+
     export ROS_MASTER_URI=http://10.10.0.1:11311
     export ROS_IP=10.10.0.1
-
+    
+ after pulling a new urdf description into abb_robotic_setups repository run
+    
+    catkin_make
+    source devel/setup.bash
+ 
+ then you can configure a new moveit package via
+ 
+    roslaunch moveit_setup_assistant setup_assistant.launch
 
 ## Docker Troubleshooting
 
