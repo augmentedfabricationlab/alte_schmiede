@@ -1,6 +1,6 @@
 # Simulation Environment Alte Schmiede Kreativquartier
 
-**Quick links:** [compas docs](https://compas-dev.github.io/main/) | [compas_fab docs](https://gramaziokohler.github.io/compas_fab/latest/) | [system overview](#system-overview) | [troubleshooting](#troubleshooting)
+**Quick links:** [compas docs](https://compas-dev.github.io/main/) | [compas_fab docs](https://gramaziokohler.github.io/compas_fab/latest/) | [troubleshooting](#docker-troubleshooting)
 
 ## Requirements
 
