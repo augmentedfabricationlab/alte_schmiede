@@ -48,13 +48,13 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
 * For starting the Docker ROS moveit simulation environment, go to VS code and start the docker container by:
   * __Only once__: If you do this the first time, you have to build the local [Dockerfile](docker\docker-images\Dockerfile) via 
     * right-click and `Build` or 
-    * in the Terminal (cd to folder) via  `docker build --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .` 
-    * (Building without cache:  `docker build --no-cache --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .`)
+    * in the Terminal (cd to folder) via\ `docker build --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .` 
+    * (Building without cache:\ `docker build --no-cache --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .`)
   * __Always__: Run the docker system that matches your robot model, e.g. [`abb_linear_axis_floor/docker-compose.yml`](docker/ros-systems/abb_linear_axis_floor/docker-compose.yml) via 
     * right-click on the file `Compose-up` or 
     * type `docker-compose up -d` in the Terminal (cd to folder) to start it.
     * when ending, don't forget to stop the image via `docker-compose down -d`
-* For access to the web UI of the docker image, start your browser and go to:  
+* For access to the web UI of the docker image, start your browser and go to:\  
       `http://localhost:8080/vnc.html?resize=scale&autoconnect=true`
 * In Rhino, you can now connect the ROS client to the rosbridge and query all moveit related services (compute_ik, trajectory planning, etc).
 
