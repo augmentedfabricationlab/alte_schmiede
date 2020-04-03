@@ -24,7 +24,7 @@ RUN mkdir -p $CATKIN_WS/src
 RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
     # Update apt-get because its cache is always cleared after installs to keep image size down
     && apt-get update \
-    # RFL packages
+    # abb packages
     && git clone -b ${ROS_DISTRO}-devel https://github.com/ros-industrial/abb.git \
     && git clone https://github.com/augmentedfabricationlab/abb_robotics_setups.git \
     # Install dependencies
