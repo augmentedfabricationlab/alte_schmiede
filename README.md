@@ -16,8 +16,6 @@
   * `EditorConfig for VS Code` (optional)
   * `Docker` (official extension, optional)
 
-> Note: if you get an error, scroll down to the [Troubleshooting](#troubleshooting) section.
-
 <sup>(1): Windows 10 Home does not support running Docker.</sup>
 
 
