@@ -50,7 +50,7 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
     * right-click and `Build` or 
     * in the Terminal (cd to folder) via<br/> `docker build --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .` 
     * (Building without cache:<br/> `docker build --no-cache --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .`)
- * Tag your Docker Image as: augmentedfabricationlab/ros-abb-planner-alte-schmiede:latest
+    * Tag your Docker Image as: augmentedfabricationlab/ros-abb-planner-alte-schmiede:latest
   * __Always__: Run the docker image that matches your robot model, e.g. [`abb_linear_axis_floor/docker-compose.yml`](docker/ros-systems/abb_linear_axis_floor/docker-compose.yml) via 
     * right-click on the file `Compose-up` or 
     * type `docker-compose up -d` in the Terminal (cd to folder) to start it.
