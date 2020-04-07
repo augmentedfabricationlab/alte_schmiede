@@ -7,7 +7,7 @@
 * Operating System: **Windows 10 Pro** <sup>(1)</sup>.
 * [Rhinoceros 3D 6.0](https://www.rhino3d.com/): Focus on Rhino 6.0 only. [See here if you use Rhino 5.0](#rhino-50)
 * [Anaconda Python Distribution](https://www.anaconda.com/download/): 3.x
-* [Docker Community Edition](https://www.docker.com/get-started): Download it for [Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)
+* [Docker Community Edition](https://www.docker.com/get-started): Download it for [Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows). Leave "switch Linux containers to Windows containers" disabled.
 * X11 Server: On Windows use [XMing](https://sourceforge.net/projects/xming/), on Mac use [XQuartz](https://www.xquartz.org/) (see details [here](https://medium.com/@mreichelt/how-to-show-x11-windows-within-docker-on-mac-50759f4b65cb)).
 * Git: [official command-line client](https://git-scm.com/) or visual GUI (e.g. [Github Desktop](https://desktop.github.com/) or [SourceTree](https://www.sourcetreeapp.com/))
 * [ABB RobotStudio](https://new.abb.com/products/robotics/robotstudio/downloads): 6.08 (only available for Windows). After install, **make sure you add RobotWare 6.03.02** (`Add-Ins` -> `RobotApps` -> `RobotWare` and add `6.03.02`).
@@ -50,6 +50,7 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
     * right-click and `Build` or 
     * in the Terminal (cd to folder) via<br/> `docker build --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .` 
     * (Building without cache:<br/> `docker build --no-cache --rm -f Dockerfile -t augmentedfabricationlab/ros-abb-planner-alte-schmiede .`)
+    * Tag your Docker Image as: augmentedfabricationlab/ros-abb-planner-alte-schmiede:latest
   * __Always__: Run the docker image that matches your robot model, e.g. [`abb_linear_axis_floor/docker-compose.yml`](docker/ros-systems/abb_linear_axis_floor/docker-compose.yml) via 
     * right-click on the file `Compose-up` or 
     * type `docker-compose up -d` in the Terminal (cd to folder) to start it.
