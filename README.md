@@ -1,4 +1,4 @@
-# Simulation Environment DF 1:1
+# Robot Simulation Environment @Alte Schmiede
 
 **Quick links:** [compas docs](https://compas-dev.github.io/main/) | [compas_fab docs](https://gramaziokohler.github.io/compas_fab/latest/) | [urdf and moveit tutorials](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html) | [simulation playground](#Alte-Schmiede-Simulation-Playground) | [troubleshooting](#docker-troubleshooting)
 
@@ -21,10 +21,10 @@
 
 ## Getting started
 
-### Compas Fab Installation
+### Compas and Compas Fab Installation
     
     (base)  conda config --add channels conda-forge
-    (base)  conda create -n your_env_name python=3.6 compas=0.11.4 compas_fab=0.10.1 --yes
+    (base)  conda create -n your_env_name python=3.8 compas=0.15.6 compas_fab=0.11.0 --yes
     (base)  conda activate your_env_name
     (your_env_name) python -m compas_rhino.install -v 6.0 -p compas compas_ghpython compas_rhino compas_assembly compas_fab roslibpy
     (your_env_name) python -m compas_fab.rhino.install -v 6.0
@@ -34,7 +34,7 @@
     (your_env_name) python
     >>> import compas_fab
     >>> compas_fab.__version__
-    '0.10.1'
+    '0.11.0'
     >>> exit()
 
 ### Repository Cloning
