@@ -36,15 +36,20 @@
     >>> compas_fab.__version__
     '0.11.0'
     >>> exit()
+    
 
 ### Repository Cloning
-Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_schmiede) into your workspace/project folder.    
+Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_schmiede) into your workspace/project folder.  
 
-## Alte Schmiede Simulation Playground
+## Loading Robot Model
 
-* For starting the simulation, open the [rhino/robotic_setup_alte_schmiede.3dm](rhino/robotic_setup_alte_schmiede.3dm) and [rhino/robotic_setup_alte_schmiede.ghx](rhino/robotic_setup_alte_schmiede.ghx) file
+* For starting the simulation, open the [rhino/robotic_setup_alte_schmiede.3dm](rhino/robotic_setup_alte_schmiede.3dm) and [rhino/robotic_setup_alte_schmiede_artist.ghx](rhino/robotic_setup_alte_schmiede_artist.ghx) file.
 * First, you need to load a specified robot model by pressing the `load` button (you can choose the model from a list of urdf files).
-* Once, the model is loaded, you can manipulate the joints with the sliders in the `Configuration` cluster
+* Once, the model is loaded, you can add and remove a tool in the `Tool` cluster and manipulate the joints with the sliders in the `Configuration` cluster.
+
+## Simulation Playground
+
+* Once you opened the file [rhino/robotic_setup_alte_schmiede.3dm](rhino/robotic_setup_alte_schmiede.3dm) and [rhino/robotic_setup_alte_schmiede.ghx](rhino/robotic_setup_alte_schmiede.ghx) abd loaded the correct robot model, you can start the Docker ROS moveit simulation environment and connect your ROS client to it.
 * For starting the __Docker ROS moveit simulation environment__, go to VS code and start the docker containers by:
   * __Only once__: If you do this the first time, you have to build the local [Dockerfile](docker\docker-images\Dockerfile) via 
     * right-click and `Build` or 
@@ -57,18 +62,18 @@ Then, clone [this repository](https://github.com/augmentedfabricationlab/alte_sc
     * when ending, don't forget to stop the image via `docker-compose down -d`
 * For access to the __web UI of the docker image__, start your browser and go to:<br/>
 `http://localhost:8080/vnc.html?resize=scale&autoconnect=true`
-* In Rhino, you can now __connect the ROS client to the rosbridge__ and query all moveit related services (compute_ik, trajectory planning, etc)
+* In Rhino, you can now __connect the ROS client to the rosbridge__ and query all moveit related services (compute_ik, trajectory planning, etc.)
 
 
 ## Docker Setup Information
 * Docker user name: augmentedfabricationlab
-* The [alte_schmiede_description](https://github.com/augmentedfabricationlab/alte_schmiede_description.git) repository contains the robot descriptions files for the Dockerfile building.
-* The [abb_robotic_setups](https://github.com/augmentedfabricationlab/abb_robotic_setups.git) repository contains the catkin workspace for the urdf models and moveit packages for ABB robotic setups, for setting up the systems in Linux as described in [this tutorial](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html).
+* The [robotic_setups_description](https://github.com/augmentedfabricationlab/robotic_setups_description.git) repository contains the robot descriptions files for the Dockerfile building.
+* The [robotic_setups](https://github.com/augmentedfabricationlab/robotic_setups.git) repository contains the catkin workspace for the urdf models and moveit packages for various robotic setups of our lab, for setting up the systems in Linux as described in [this tutorial](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html).
 * The `ros-base` and `novnc` images are remote images and drawn from the [gramaziokohler docker hub organization](https://hub.docker.com/u/gramaziokohler).
 
 ## Moveit on Linux Notes
 
-when ROS should be connected between 2 machines via Ethernet, the ROS MASTER and IPP should be changed via
+when ROS should be connected between 2 machines via Ethernet (and not via localhost), the ROS MASTER and IPP should be changed via
 
     nano ~/.bashrc
     
@@ -77,7 +82,7 @@ and set accordingly:
     export ROS_MASTER_URI=http://10.10.0.1:11311
     export ROS_IP=10.10.0.1
     
- after pulling a new urdf description into abb_robotic_setups repository run
+ after pulling a new urdf description into robotic_setups repository run
     
     catkin_make
     source devel/setup.bash
