@@ -26,7 +26,7 @@ RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
     && apt-get update \
     # abb packages
     && git clone -b ${ROS_DISTRO}-devel https://github.com/ros-industrial/abb.git \
-    && git clone https://github.com/augmentedfabricationlab/alte_schmiede_description.git \
+    && git clone https://github.com/augmentedfabricationlab/robotic_setups_description.git \
     # Install dependencies
     && cd $CATKIN_WS \
     && rosdep install -y --from-paths . --ignore-src --rosdistro ${ROS_DISTRO} \
