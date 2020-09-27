@@ -32,3 +32,6 @@ RUN source /opt/ros/${ROS_DISTRO}/setup.bash \
     && rosdep install -y --from-paths . --ignore-src --rosdistro ${ROS_DISTRO} \
     # Build catkin workspace
     && catkin_make
+
+# now update all
+RUN apt-get update && apt-get upgrade -y
