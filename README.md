@@ -26,7 +26,7 @@
     (base)  conda config --add channels conda-forge
     (base)  conda create -n your_env_name python=3.8 compas=0.15.6 compas_fab=0.11.0 --yes
     (base)  conda activate your_env_name
-    (your_env_name) python -m compas_rhino.install -v 6.0 -p compas compas_ghpython compas_rhino compas_assembly compas_fab roslibpy
+    (your_env_name) python -m compas_rhino.install -v 6.0
     (your_env_name) python -m compas_fab.rhino.install -v 6.0
     
 ### Verify Installation
